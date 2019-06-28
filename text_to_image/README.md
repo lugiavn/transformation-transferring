@@ -1,2 +1,1 @@
-
-Simple Image Caption 112 dataset: http://data.nam.ai/SIC112.zip
+Let's transfer text transformations to images
