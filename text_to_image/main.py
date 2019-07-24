@@ -1,4 +1,4 @@
-#
+# Nam
 import time
 import numpy as np
 import random
@@ -20,8 +20,8 @@ def parse_opt():
     parser = argparse.ArgumentParser()
     parser.add_argument('-f', type=str, default='f')
     parser.add_argument('--comment', type=str, default='x')
-    parser.add_argument('--coco_path', type=str, default='/home/nam/exp/Fall2018/imagetextdatasets/coco')
-    parser.add_argument('--sic112_path', type=str, default='../../imagetextdatasets/nams_googleimage_dataset/googleimagesdata/downloads12')
+    parser.add_argument('--coco_path', type=str, default='./coco')
+    parser.add_argument('--sic112_path', type=str, default='./downloads12')
     parser.add_argument('--transformation_architecture', type=str, default='modified_tirg')
     parser.add_argument('--embed_dim', type=int, default=512)
     parser.add_argument('--loader_num_workers', type=int, default=8)
