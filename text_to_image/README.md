@@ -34,5 +34,6 @@ Then run the train+test:
 python main.py --coco_path ./datasets/coco --sic112_path ./datasets/SIC112
 
 ```
+The first run will take a couple of hours to cache the image features. After that, training starts and would go for another hour to get good result.
 
-logs will be saved at ./runs, monitor with tensorboard
+Logs will be saved at ./runs, monitor with tensorboard
