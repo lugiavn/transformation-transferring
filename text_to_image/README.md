@@ -37,3 +37,7 @@ python main.py --coco_path ./datasets/coco --sic112_path ./datasets/SIC112
 The first run will take a couple of hours to cache the image features. After that, training starts and would go for another hour to get good result.
 
 Logs will be saved at ./runs, monitor with tensorboard
+
+The final model will be saved as "x.pt".
+
+Use play_with_saved_model.ipynb notebook to inspect some qualitative result.
