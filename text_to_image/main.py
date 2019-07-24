@@ -62,8 +62,6 @@ def load_datasets(opt):
     sic112.precompute_img_features(0)
     return trainset, testset, sic112
 
-    
-
 def create_model(opt, trainset):
     model = ImageTextEncodeTransformModel(opt.embed_dim, trainset.get_all_texts())
     if opt.transformation_architecture == 'modified_tirg':
@@ -235,8 +233,6 @@ def main():
         if epoch % opt.learning_rate_decay_frequency == 0:
             for g in optimizer.param_groups:
                 g['lr'] *= 0.1
-                
-
     # save
     torch.save({
         'model': model.cpu()
@@ -244,19 +240,4 @@ def main():
  
 if __name__ == '__main__':
     main() 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
