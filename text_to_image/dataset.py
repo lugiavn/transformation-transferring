@@ -87,6 +87,9 @@ class NamsBaseDataset(torch.utils.data.Dataset):
         }
         return img
 
+    def get_raw_img(self, idx):
+        return torchvision.datasets.folder.pil_loader(self.get_image_path(idx))
+    
 # Required files:
 # dataset_path/annotations/captions_val2014.json
 # dataset_path/annotations/captions_train2014.json
